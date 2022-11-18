@@ -6,19 +6,36 @@
     box-sizing: border-box;
 }
 
-/* main */
+/* general */
 
-main {
+ul {
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+/* utility */
+
+.flex {
+    display: flex;
+}
+
+.round {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* main */
 
 /* navbar */
 
 nav {
     width: 200px;
+    height: calc(100% - 100px);
+    padding: 20px 50px 0 10px;
     /* background-color: #000000; */
     background-color: lightgreen;
     position: fixed;
-    height: calc(100% - 100px);
     top: 0;
     left: 0;
 }
@@ -31,6 +48,7 @@ nav {
     /* background-color: #141922; */
     background-color: blue;
     color: white;
+
 }
 
 /* header */
@@ -50,7 +68,21 @@ nav {
 .playlist {
     padding: 100px 0;
     margin: 20px 0 20px 220px;
+    height: calc(100vh - 100px);
 
+}
+
+.row {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    /* margin: 10px; */
 }
 
 /* footer */
