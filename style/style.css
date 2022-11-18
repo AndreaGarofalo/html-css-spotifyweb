@@ -33,15 +33,28 @@ ul {
 /* navbar */
 
 nav {
-    width: 200px;
+    width: 50px;
     height: calc(100% - 100px);
-    padding: 20px 50px 0 10px;
+    padding: 10px 10px;
     /* background-color: #000000; */
     background-color: lightgreen;
     position: fixed;
     top: 0;
     left: 0;
 }
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    display: none;
+}
+
+nav .big-logo {
+    display: none;
+}
+
 
 /* main body */
 
@@ -63,7 +76,7 @@ nav {
     /* background-color: #080b12; */
     background-color: red;
     position: fixed;
-    width: calc(100% - 217px);
+    width: calc(100% - 67px);
     right: 17px;
     top: 0;
 }
@@ -72,7 +85,7 @@ nav {
 
 .playlist {
     padding: 100px 0;
-    margin: 20px 0 20px 220px;
+    margin: 20px 0 20px 70px;
     height: calc(100vh - 100px);
 
 }
@@ -87,7 +100,6 @@ nav {
     width: 150px;
     height: 150px;
     background-color: white;
-    /* margin: 10px; */
 }
 
 /* footer */
@@ -109,11 +121,15 @@ footer {
 }
 
 .current-song {
-    flex-basis: 20%;
+    flex-basis: 25%;
+    flex-shrink: 1;
 }
 .play-time {
-    flex-basis: 60%;
+
+    flex-basis: 50%;
+    flex-shrink: 3;
 }
 .settings {
-    flex-basis: 20%;
+    flex-basis: 25%;
+    flex-shrink: 1;
 }
