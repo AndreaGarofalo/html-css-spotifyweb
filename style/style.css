@@ -41,6 +41,8 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav h2 {
@@ -55,6 +57,21 @@ nav .big-logo {
     display: none;
 }
 
+.user {
+    text-align: center;
+}
+
+.user i {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.user .fa-circle-user {
+    font-size: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #808080;
+}
 
 /* main body */
 
