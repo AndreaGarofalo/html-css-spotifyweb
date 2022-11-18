@@ -1,0 +1,66 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main */
+
+main {
+}
+
+/* navbar */
+
+nav {
+    width: 200px;
+    /* background-color: #000000; */
+    background-color: lightgreen;
+    position: fixed;
+    height: calc(100% - 100px);
+    top: 0;
+    left: 0;
+}
+
+/* main body */
+
+.main-body {
+    overflow-y: scroll;
+    max-height: calc(100vh - 100px) ;
+    /* background-color: #141922; */
+    background-color: blue;
+    color: white;
+}
+
+/* header */
+
+.header {
+    height: 100px;
+    /* background-color: #080b12; */
+    background-color: red;
+    position: fixed;
+    width: calc(100% - 217px);
+    right: 17px;
+    top: 0;
+}
+
+/* playlist */
+
+.playlist {
+    padding: 100px 0;
+    margin: 20px 0 20px 220px;
+
+}
+
+/* footer */
+
+footer {
+    /* background-color: #282828; */
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
