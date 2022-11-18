@@ -28,6 +28,11 @@ ul {
 .border {
     border: 1px solid black;
 }
+
+.active {
+    
+}
+
 /* main */
 
 /* navbar */
@@ -84,6 +89,14 @@ nav .big-logo {
 
 }
 
+.selections  {
+    /* color: #808080; */
+}
+
+.selections li {
+    padding: 10px 20px;
+}
+
 /* header */
 
 .header {
@@ -96,6 +109,14 @@ nav .big-logo {
     width: calc(100% - 67px);
     right: 17px;
     top: 0;
+}
+
+.header button {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
 }
 
 /* playlist */
