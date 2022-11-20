@@ -51,6 +51,10 @@
         display: block;
     }
 
+    .download {
+        border-bottom: 1px solid #808080;
+    }
+
     .header {
         width: calc(100% - 217px);
 
