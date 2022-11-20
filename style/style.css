@@ -147,8 +147,8 @@ nav li {
 .main-body {
     overflow-y: scroll;
     max-height: calc(100vh - 80px) ;
-    /* background-color: #141922; */
-    background-color: blue;
+    background-color: #141922;
+    /* background-color: blue; */
     color: white;
 
 }
@@ -180,6 +180,10 @@ nav li {
     color: #fff;
     border-radius: 25px;
     padding: 10px 30px;
+    /* position: absolute;
+    right: 0;
+    top: 25%; 
+    z-index: 1;*/
 }
 
 /* playlist */
@@ -191,6 +195,11 @@ nav li {
 
 }
 
+.songs h1 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
 .row {
     flex-wrap: wrap;
     width: 100%;
@@ -199,9 +208,31 @@ nav li {
 
 .card {
     width: 150px;
-    height: 150px;
-    background-color: white;
+    text-align: center;
 }
+
+.card img {
+    width: 100%;
+}
+
+.card h4 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.playlist p {
+    font-size: 12px;
+    color: #808080;
+}
+
+.playlist .for-you {
+    margin-bottom: 2px;
+}
+
+.playlist .subtitle {
+    margin-bottom: 15px;
+}
+
 
 /* footer */
 
