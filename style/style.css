@@ -29,7 +29,9 @@ ul {
     border: 1px solid black;
 }
 
-.active {
+.active-navbar:active {
+    border-left: 2px solid #adff2f;
+    display: none;
     
 }
 
@@ -39,10 +41,9 @@ ul {
 
 nav {
     width: 50px;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     padding: 10px 10px;
-    /* background-color: #000000; */
-    background-color: lightgreen;
+    background-color: #000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,28 +53,95 @@ nav {
 
 nav h2 {
     display: none;
-}
-
-nav ul {
-    display: none;
+    padding: 20px 10px 5px 10px;
+    font-size: 15px;
+    color: white;
 }
 
 nav .big-logo {
     display: none;
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 
-.user {
-    text-align: center;
+li p {
+    display: none;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #808080;   
 }
 
-.user i {
-    margin: 10px 0;
+li img {
+    height: 25px;
+}
+
+.add-song {
+    height: 25px;
+    width: 25px;
+    background-color: #a3a3a3;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-playlist {
+    display: none;
+}
+.create-playlist p {
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.fa-plus {
+    color: #000000;
+}
+
+nav li {
+    padding: 2px 0;
+    align-items: center;
     color: #fff;
 }
 
-.user .fa-circle-user {
-    font-size: 30px;
-    height: 30px;
+.user hr { 
+    display: none;
+}
+
+.user {
+    flex-direction: column;
+}
+
+.artist-current {
+    margin: 10px 0;
+}
+
+.artist-current p {
+    display: none;
+    color: #fff;
+    line-height: 25px;
+    padding-left: 10px;
+    
+}
+
+.download {
+    margin: 10px 0;
+}
+
+.download p {
+    display: none;
+    padding-left: 5px;
+    line-height: 20px;
+    font-size: 10px;
+    color: #808080;   
+}
+
+.user .download-img {
+    height: 20px;
+    width: 20px;
+    filter: invert(56%) sepia(4%) saturate(5%) hue-rotate(244deg) brightness(88%) contrast(91%);
+}
+
+.user .user-img {
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     background-color: #808080;
 }
@@ -82,7 +150,7 @@ nav .big-logo {
 
 .main-body {
     overflow-y: scroll;
-    max-height: calc(100vh - 100px) ;
+    max-height: calc(100vh - 80px) ;
     /* background-color: #141922; */
     background-color: blue;
     color: white;
@@ -100,8 +168,8 @@ nav .big-logo {
 /* header */
 
 .header {
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
     text-align: end;
     /* background-color: #080b12; */
     background-color: red;
@@ -124,7 +192,7 @@ nav .big-logo {
 .playlist {
     padding: 100px 0;
     margin: 20px 0 20px 70px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 
 }
 
@@ -145,7 +213,7 @@ nav .big-logo {
 footer {
     /* background-color: #282828; */
     background-color: orange;
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: fixed;
     bottom: 0;

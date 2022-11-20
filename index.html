@@ -12,27 +12,79 @@
 <body>
     <main>
         <nav class="flex">
-            <img class="big-logo" src="img/logo.svg" alt="spotify">
-            <img class="small-logo" src="img/logo-small.svg" alt="spotify">
-            <ul>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-            </ul>
-            <h2>K</h2>
-            <ul>
-                <li>d</li>
-                <li>e</li>
-                <li>f</li>
-                <li>g</li>
-                <li>h</li>
-                <li>i</li>
-                <li>l</li>
-                <li>m</li>
-            </ul>
-            <div class="user">
-                <i class="fa-regular fa-circle-down"></i>                
-                <i class="fa-regular fa-circle-user"></i>            
+            <div class="upper-navbar">
+                <img class="big-logo" src="img/logo.svg" alt="spotify">
+                <img class="small-logo" src="img/logo-small.svg" alt="spotify">
+                <ul>
+                    <li class="flex active-navbar">
+                        <img src="img/home.svg" alt="home">
+                        <p>Home</p>
+                    </li>
+                    <li class="flex">
+                        <img src="img/search.svg" alt="search">
+                        <p>Cerca</p>
+                    </li>
+                    <li class="flex">
+                        <img src="img/libreria.svg" alt="library">
+                        <p>La tua libreria</p>
+                    </li>         
+                </ul>
+                <h2>PLAYLIST</h2>
+                <ul class="create-playlist">
+                    <li class="flex active-playlist">
+                        <span class="flex add-song">
+                           <i class="fa-solid fa-plus"></i>
+                        </span>
+                        <p>Crea Playlist</p>
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    <li>
+                        <p>
+                            Nome Playlist
+                        </p>   
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="user flex">
+                <div class="download flex">
+                    <img class="download-img" src="img/download.svg" alt="download">  
+                    <p>Installa app</p>
+                </div>
+                <hr> 
+                <div class="artist-current flex">
+                    <img class="user-img" src="img/profile.svg" alt="user">
+                    <p>John Doe</p>
+                </div>             
             </div>
         </nav>
         <section class="main-body">
