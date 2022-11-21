@@ -68,6 +68,15 @@
     .card {
         width: 16vw;
     }
+
+    .icons {
+        flex-basis: 30%;
+        flex-direction: row;
+    }
+
+    .icons i {
+        padding: 0 2px;
+    }
 }
 
 /* *************** over 1200 ****************** */

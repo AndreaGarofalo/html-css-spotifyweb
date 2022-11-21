@@ -278,10 +278,11 @@ footer {
 
 .icons {
     flex-basis: 10%;
+    flex-direction: column;
 }
 
-.icons {
-    flex-direction: column;
+.icons i {
+    color: #808080;
 }
 
 .play-time {
