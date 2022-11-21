@@ -43,7 +43,7 @@ nav {
     left: 0;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav h2 {
@@ -102,8 +102,8 @@ nav li img {
     font-size: 12px;
 }
 
-.create-playlist:not(li) {
-    overflow-y: auto;
+.create-playlist ul {
+    overflow-y: scroll;
 }
 
 .fa-plus {
@@ -210,6 +210,7 @@ hr.active {
     position: sticky;
     right: 0px;
     top: 0;
+    z-index: 1;
 }
 
 .header button:hover {
