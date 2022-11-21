@@ -31,6 +31,18 @@
         display: block;
     }
 
+    .active-navbar p{
+        color: #fff;
+    }
+    
+    .active-navbar img{
+        filter: opacity(100);
+    }
+    
+    .active-navbar {
+        border-left: 2px solid #adff2f;    
+    }
+
     .create-playlist {
         display: block;
     }
@@ -59,6 +71,10 @@
     .card {
         width: 28vw;
     }
+
+    .card-img {
+        height: 28vw;
+    }
    
     .current-song {
         flex-basis: 25%;
@@ -75,6 +91,10 @@
 @media screen and (min-width:768px) {
     .card {
         width: 16vw;
+    }
+
+    .card-img {
+        height: 16vw;
     }
 
     .current-song {
@@ -105,4 +125,8 @@
     .card {
         width: 11vw;
     }    
+
+    .card-img {
+        height: 11vw;
+    }
 }

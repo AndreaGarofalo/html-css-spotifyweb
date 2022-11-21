@@ -29,12 +29,6 @@ ul {
     border: 1px solid black;
 }
 
-.active-navbar:active {
-    border-left: 2px solid #adff2f;
-    display: none;
-    
-}
-
 /* main */
 
 /* navbar */
@@ -63,6 +57,22 @@ nav .big-logo {
     display: none;
     padding: 0 10px;
     margin-bottom: 20px;
+}
+
+nav li img{
+    filter: opacity(0.6);
+}
+
+nav li:hover img{
+    filter: opacity(100);
+}
+
+nav li:hover .add-song{
+    background-color: #fff;
+}
+
+nav li:hover p{
+    color: #fff;
 }
 
 nav li p {
@@ -126,6 +136,10 @@ nav li {
     padding: 10px 0;
 }
 
+.download:hover p {
+    color: #fff;
+}
+
 .download p {
     display: none;
     padding-left: 5px;
@@ -134,6 +148,9 @@ nav li {
     color: #808080;   
 }
 
+.download:hover .download-img {
+    filter: opacity(100);
+}
 .user .download-img {
     height: 20px;
     width: 20px;
@@ -159,6 +176,10 @@ nav li {
 
 .selections  {
     color: #808080;
+}
+
+.selections li:hover {
+    color: #fff;
 }
 
 .selections li {
@@ -191,6 +212,9 @@ hr.active {
     top: 0;
 }
 
+.header button:hover {
+    transform: scale(1.1);
+}
 .header button {
     background-color: transparent;
     border-color: #fff;
@@ -222,8 +246,36 @@ hr.active {
     margin: 0 1%;
 }
 
+.card-img {
+    height: 38vw;
+    position: relative;
+}
+
+.card-img:hover .play-now {
+    display: block;
+}
+
+.play-now {
+    display: none;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.play-now i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
 .card img {
     width: 100%;
+    height: 100%;
 }
 
 .card h4 {
@@ -291,6 +343,11 @@ footer {
     font-size: 12px;
     color: #fff;
 }
+.current-name p:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
 .current-name p{
     font-size: 10px;
     color: #808080;
@@ -299,6 +356,10 @@ footer {
 .icons {
     flex-basis: 10%;
     flex-direction: column;
+}
+
+.icons i:hover {
+    color: #fff;
 }
 
 .icons i {
@@ -354,9 +415,14 @@ footer {
     border-radius: 25px;
 }
 
+.progress-bar:hover .value{
+    background-color: #adff2f;
+}
+
 .progress-bar:hover .marker{
     display: block;
 }
+
 .marker {
     position: absolute;
     top: 50%;
