@@ -92,6 +92,10 @@ li img {
     font-size: 12px;
 }
 
+.create-playlist:not(li) {
+    overflow-y: auto;
+}
+
 .fa-plus {
     color: #000000;
 }
@@ -231,8 +235,7 @@ nav li {
 /* footer */
 
 footer {
-    /* background-color: #282828; */
-    background-color: orange;
+    background-color: #282828;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -246,6 +249,7 @@ footer {
     width: 100%;
     height: 80px;
     padding: 10px 5px;
+    gap: 10px;
 }
 
 .current-song {
