@@ -49,6 +49,7 @@ nav {
     left: 0;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
 }
 
 nav h2 {
@@ -145,16 +146,15 @@ nav li {
 /* main body */
 
 .main-body {
-    overflow-y: scroll;
-    max-height: calc(100vh - 80px) ;
+    overflow-y: auto;
+    height: calc(100vh - 80px) ;
     background-color: #141922;
-    /* background-color: blue; */
     color: white;
 
 }
 
 .selections  {
-    /* color: #808080; */
+    color: #808080;
 }
 
 .selections li {
@@ -168,9 +168,8 @@ nav li {
     line-height: 80px;
     text-align: end;
     background-color: #080b12;
-    position: fixed;
-    width: calc(100% - 67px);
-    right: 17px;
+    position: sticky;
+    right: 0px;
     top: 0;
 }
 
@@ -179,20 +178,14 @@ nav li {
     border-color: #fff;
     color: #fff;
     border-radius: 25px;
-    padding: 10px 30px;
-    /* position: absolute;
-    right: 0;
-    top: 25%; 
-    z-index: 1;*/
+    padding: 10px 30px; 
+    margin: 0 20px;
 }
 
 /* playlist */
 
 .playlist {
-    padding: 100px 0;
     margin: 20px 0 20px 70px;
-    height: calc(100vh - 80px);
-
 }
 
 .songs h1 {
@@ -244,6 +237,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 2;
 }
 
 .controls {
