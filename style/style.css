@@ -196,12 +196,12 @@ nav li {
 .row {
     flex-wrap: wrap;
     width: 100%;
-    gap: 20px;
 }
 
 .card {
-    width: 35%;
+    width: 38vw;
     text-align: center;
+    margin: 0 1%;
 }
 
 .card img {
@@ -216,6 +216,7 @@ nav li {
 .playlist p {
     font-size: 12px;
     color: #808080;
+    margin: 8px 0;
 }
 
 .playlist .for-you {
