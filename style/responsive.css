@@ -60,6 +60,14 @@
         width: 28vw;
     }
    
+    .current-song {
+        flex-basis: 25%;
+    }
+
+    .settings {
+        flex-basis: 25%;
+    }
+
 }
 
 /* *************** over 768 ****************** */
@@ -67,6 +75,14 @@
 @media screen and (min-width:768px) {
     .card {
         width: 16vw;
+    }
+
+    .current-song {
+        flex-basis: 200px;
+    }
+
+    .current-img {
+        flex-basis: 70%;
     }
 
     .icons {
@@ -79,10 +95,27 @@
     }
 }
 
+/* *************** over 800 ****************** */
+
+@media screen and (min-width:800px) {
+
+}
+
+/* *************** over 900 ****************** */
+
+@media screen and (min-width:900px) {
+    .settings {
+        padding-left: 1rem;
+    }
+}
+
 /* *************** over 1200 ****************** */
 
 @media screen and (min-width:1200px) {
     .card {
         width: 11vw;
     }    
+    .settings {
+        padding-left: 2rem;
+    }
 }

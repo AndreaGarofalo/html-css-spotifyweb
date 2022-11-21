@@ -249,14 +249,15 @@ footer {
 }
 
 .current-song {
-    flex-basis: 25%;
+    flex-basis: 15%;
     flex-shrink: 1;
     align-items: center;
     padding: 0 2px;
+    gap: 5px;
 }
 
 .current-img {
-    flex-basis: 80%;
+    flex-basis: 90%;
     align-items: center;
 }
 
@@ -290,7 +291,7 @@ footer {
     flex-basis: 50%;
     flex-shrink: 3;
     text-align: center;
-    margin: 0 30px;
+    margin: 0 5px;
 }
 
 .video-controls i {
@@ -303,9 +304,9 @@ footer {
 }
 
 .video-time {
+    flex-basis: 50%;
     justify-content: center;
     align-items: center;
-    width: 80%;
     margin: 0 auto;
 }
 .video-time p {
@@ -351,6 +352,13 @@ footer {
 }
 
 .settings {
-    flex-basis: 25%;
+    flex-basis: 35%;
     flex-shrink: 1;
+    align-items: center;
+}
+
+.settings i{
+    padding: 0 5px;
+    color: #fff;
+    font-size: 13px;
 }
