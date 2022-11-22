@@ -31,11 +31,15 @@ ul {
 
 /* main */
 
+main {
+    height: calc(100% - 80px);
+}
+
 /* navbar */
 
 nav {
     width: 50px;
-    height: calc(100% - 80px);
+    height: inherit;
     background-color: #000000;
     position: fixed;
     top: 0;
@@ -44,6 +48,10 @@ nav {
     justify-content: space-between;
     z-index: 2;
 }
+
+/* .upper-navbar {
+    max-height: 100%;
+} */
 
 nav h2 {
     display: none;
@@ -120,6 +128,7 @@ nav li img {
 }
 
 .playlist-list {
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -192,11 +201,12 @@ nav li {
 
 }
 
-.selections  {
+.selections a {
     color: #808080;
+    text-decoration: none;
 }
 
-.selections li:hover {
+.selections li:hover a {
     color: #fff;
 }
 
