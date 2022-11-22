@@ -36,7 +36,6 @@ ul {
 nav {
     width: 50px;
     height: calc(100% - 80px);
-    padding: 10px 10px;
     background-color: #000000;
     position: fixed;
     top: 0;
@@ -206,18 +205,16 @@ nav li {
     font-size: 10px;
 }
 
-.selections hr {
-    display: none;
+.selections li:hover::after {
+    content: "";
+    color: #adff2f;
+    display: block; 
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 2px solid #adff2f;
 }
 
-hr.active {
-    position: relative;
-    top: 0;
-    left: 25%;
-    border-bottom: 2px solid #adff2f;
-    width: 40%;
-    display: block;
-}
+
 
 /* header */
 
