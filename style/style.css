@@ -67,9 +67,6 @@ nav li:hover img{
     filter: opacity(100);
 }
 
-nav li:hover .add-song{
-    background-color: #fff;
-}
 
 nav li:hover p{
     color: #fff;
@@ -94,16 +91,37 @@ nav li img {
     align-items: center;
 }
 
-.create-playlist {
-    display: none;
-}
-.create-playlist p {
-    margin: 3px 0;
-    font-size: 12px;
+.create-playlist:hover .add-song{
+    background-color: #fff;
 }
 
-.create-playlist ul {
-    overflow-y: scroll;
+.playlist-list {
+    display: none;
+}
+
+.create-playlist:hover p{
+    color: #fff;
+}
+
+.create-playlist {
+    display: none;    
+    padding: 0 15px;
+    margin: 5px 0;
+
+}
+.create-playlist p {
+    margin: 5px 5px;
+    font-size: 16px;
+    color: #808080;
+}
+
+.playlist-list p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.playlist-list {
+    overflow-y: auto;
 }
 
 .fa-plus {
@@ -111,13 +129,14 @@ nav li img {
 }
 
 nav li {
-    padding: 2px 0;
+    padding: 5px 0;
     align-items: center;
     color: #fff;
 }
 
 .user {
     flex-direction: column;
+    height: 90px;
 }
 
 .artist-current {

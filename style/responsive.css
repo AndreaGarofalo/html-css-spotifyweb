@@ -20,7 +20,7 @@
     }
 
     nav li {
-        padding: 2px 10px;
+        padding: 5px 10px;
     }
 
     nav li p {
@@ -43,8 +43,12 @@
         border-left: 2px solid #adff2f;    
     }
 
-    .create-playlist {
+    .playlist-list {
         display: block;
+    }
+
+    .create-playlist {
+        display: flex;
     }
 
     .artist-current p {
